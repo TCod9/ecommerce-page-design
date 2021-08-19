@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  h2{
+      font-weight: bold;
+      margin:.5rem;
+  }
+  h4{
+       white-space: nowrap;
+       overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  line-height: 1.5;
+    }
+body{
+    overflow-x: hidden;
+    font-size:.85rem;
+    margin:auto;
+}
+.wrapper{
+    padding-left:8rem;
+    padding-right:8rem;
+    margin:auto;
+    background:  #942641;
+    padding-top:2.3rem;
+    padding-bottom:2.3rem;
+}
+nav{
+    width:100%;
+    height:4rem;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    padding-left:8rem;
+    padding-right:8rem;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+.nav:after{
+    content: "";
+    clear:both;
+    display:table;
+}
+.nav-header{
+    margin:1rem;
+}
+.nav-search{
+    display: flex;
+    align-items: center;
+    flex:50%;
+}
+.nav-buttons{
+    display: flex;
+    align-items: center;
+    flex:25%;
+    height: 2.2rem;
+    align-items: center;
+}
+.nav-buttons span{
+    margin-left:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.nav-buttons span:first-child{
+    margin-left: 5rem;
+}
+.nav-buttons span img{
+    margin-right:.5rem;
+}
+.logo{
+    margin-right:3rem;
+}
+.search{
+    width:90%;
+    height:2rem;
+    border:0.1rem solid #dedede;
+    padding:.7rem;
+    border-radius:.3rem;
+}
+button{
+    height:2rem;
+    border-radius:.3rem;
+    background:#E4811C;
+    text-transform: uppercase;
+    margin-left:1rem;
+    border-color:transparent;
+    border-image: none;
+    border-style: none;
+    padding:.6rem;
+    color:#ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.icon{
+    width:1.2rem;
+}
+
+main{
+    background:  transparent;
+    width:100%;
+    margin: auto;
+}
+
+.menu-banner{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-banner .menu{
+    width:20%;
+}
+.menu-banner .menu-list{
+    width:100%;
+    background-color: #ffffff;
+    border-radius:.5rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;;
+    margin-block-start:0;
+    padding-inline-start:0.7rem;
+    height: 20rem;
+}
+.menu-banner .menu-list{
+    list-style-type: none;
+}
+.menu-banner .menu-list li, .banner-menu-list li{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.menu-banner .menu-list li img, .banner-menu-list li img{
+    margin-right: .75rem;
+}
+.menu-banner .banner{
+    width:53%;
+}
+.menu-banner .banner .banner-widget{
+    width:100%;
+    height: 20rem;
+    background:#ffffff;
+    border-radius:.5rem;
+    padding:.4rem;
+    margin-left:2rem;
+    margin-right:2rem;
+    background-image: url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu-banner .ads{
+    width:22%;
+}
+
+.banner-left-menu{
+    width:100%;
+    height: 10.5rem;
+    background:#ffffff;
+    border-radius:.5rem;
+    padding-top: .4rem;
+    padding-bottom: 4rem;;
+    margin-left: 4rem;
+    padding:.2rem;
+    padding-bottom: .65rem;
+
+}
+.banner-menu-list{
+    list-style-type: none;
+    margin-block-start:0;
+    padding-inline-start:.5rem;
+}
+.banner-menu-list .icon{
+    width:1.9rem;
+}
+
+.banner-left-ad{
+    width:100%;
+    height: 8.5rem;
+    background:#E4811C;
+    border-radius:.5rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;;
+    margin-left: 4rem;
+    padding:.2rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.call-action{
+    background-color: #ffffff;
+    color:#333333;
+    
+}
+
+/* card grid */
+.card-grid{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-grid > div{
+    border-radius:.3rem;
+    background-color:#ffffff;
+    padding:.7rem 1rem .7rem 1rem;
+    display: flex;
+    align-items: center;
+    width:24.5%;
+    margin:.5rem;
+}
+.card-grid > div:first-child{
+    margin-left:0;
+}
+.card-grid > div:last-child{
+    margin-right: 0;
+}
+.card-grid > div img{
+    margin-right:1rem;
+}
+.card-grid .icon{
+    width: 2.2rem;
+}
+
+/* top selling card */
+.top-selling-card{
+    width: 100%;
+    margin-top:.7rem;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius:.3rem;
+    padding:.6rem;
+}
+.top-selling-list{
+    display: flex;
+}
+.top-selling-list{
+    display: flex;
+}
+.top-selling-list > div{
+    padding:.1rem .2rem .7rem .2rem;
+    width:16.66666666667%;
+    height: 20rem;
+    margin:.3rem;
+}
+.top-selling-list > div img{
+    width: 100%;
+}
